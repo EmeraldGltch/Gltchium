@@ -1,0 +1,25 @@
+{
+  "name": "gltchium",
+  "version": "0.0.1",
+  "description": "This is a GltchedNetwork official package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmeraldGltch/Gltchium.git"
+  },
+  "author": "EmeraldGltch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmeraldGltch/Gltchium/issues"
+  },
+  "homepage": "https://github.com/EmeraldGltch/Gltchium#readme",
+  "dependencies": {
+    "discord.js": "^14.1.2",
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1",
+    "vite": "^3.0.4"
+  }
+}
