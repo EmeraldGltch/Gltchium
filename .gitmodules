@@ -1,0 +1,3 @@
+[submodule "Gltchium/vendor/spdlog"]
+	path = Gltchium/vendor/spdlog
+	url = https://github.com/gabime/spdlog
