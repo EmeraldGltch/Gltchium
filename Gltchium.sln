@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{BC01512A-4C8E-43C4-BE4F-8306DBB89BF5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gltchium", "Gltchium\Gltchium.vcxproj", "{0B9E5F2D-D006-421B-A5A6-9980D5B1EF2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B9E5F2D-D006-421B-A5A6-9980D5B1EF2D}.Debug|x64.ActiveCfg = Debug|x64
+		{0B9E5F2D-D006-421B-A5A6-9980D5B1EF2D}.Debug|x64.Build.0 = Debug|x64
+		{0B9E5F2D-D006-421B-A5A6-9980D5B1EF2D}.Release|x64.ActiveCfg = Release|x64
+		{0B9E5F2D-D006-421B-A5A6-9980D5B1EF2D}.Release|x64.Build.0 = Release|x64
+		{BC01512A-4C8E-43C4-BE4F-8306DBB89BF5}.Debug|x64.ActiveCfg = Debug|x64
+		{BC01512A-4C8E-43C4-BE4F-8306DBB89BF5}.Debug|x64.Build.0 = Debug|x64
+		{BC01512A-4C8E-43C4-BE4F-8306DBB89BF5}.Release|x64.ActiveCfg = Release|x64
+		{BC01512A-4C8E-43C4-BE4F-8306DBB89BF5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4F19A0F-62F8-4469-BA46-DE5D42E65294}
+	EndGlobalSection
+EndGlobal
