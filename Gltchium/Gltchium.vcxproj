@@ -81,12 +81,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Gltchium\Log.h" />
     <ClInclude Include="src\Gltchium.h" />
     <ClInclude Include="src\Gltchium\Application.h" />
     <ClInclude Include="src\Gltchium\Core.h" />
     <ClInclude Include="src\Gltchium\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Gltchium\Log.cpp" />
     <ClCompile Include="src\Gltchium\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

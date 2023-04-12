@@ -27,9 +27,15 @@
     <ClInclude Include="src\Gltchium\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gltchium\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gltchium\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gltchium\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

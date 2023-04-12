@@ -1,8 +1,15 @@
 #pragma once
 
-// USED IN GLTCHIUM PRODUCTS
-#include "Gltchium/Application.h";
+///////////////////////////
+///     Other Stuff     ///
+///////////////////////////
+
 #include <stdio.h>;
+
+// USED IN GLTCHIUM PRODUCTS
+
+#include "Gltchium/Application.h";
+#include "Gltchium/Log.h";
 
 /////////////////////
 ///  Entry Point  ///

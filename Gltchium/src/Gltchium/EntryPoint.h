@@ -6,6 +6,9 @@
 
 	int main(int argc, char** argv) {
 		Gltchium::Print();
+
+		Gltchium::Log::Init();
+
 		auto app = Gltchium::CreateApplication();
 		app->Run();
 		delete app;
