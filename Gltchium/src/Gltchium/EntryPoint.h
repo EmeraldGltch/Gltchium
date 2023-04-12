@@ -8,6 +8,8 @@
 		Gltchium::Print();
 
 		Gltchium::Log::Init();
+		GC_CORE_INFO("Initializing Engine...");
+		GC_INFO("Initializing Client...");
 
 		auto app = Gltchium::CreateApplication();
 		app->Run();

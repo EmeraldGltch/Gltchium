@@ -21,3 +21,17 @@ namespace Gltchium {
 			static std::shared_ptr<spdlog::logger> s_ClientLogger;
 	};
 }
+
+// CORE LOGGING MACROS
+#define GC_CORE_ERROR(...)	::Gltchium::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define GC_CORE_WARN(...)	::Gltchium::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define GC_CORE_INFO(...)	::Gltchium::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define GC_CORE_ERROR(...)	::Gltchium::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define GC_CORE_FATAL(...)	::Gltchium::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+
+// CLIENT LOGGING MACROS
+#define GC_ERROR(...)		::Gltchium::Log::GetClientLogger()->error(__VA_ARGS__)
+#define GC_WARN(...)		::Gltchium::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define GC_INFO(...)		::Gltchium::Log::GetClientLogger()->info(__VA_ARGS__)
+#define GC_ERROR(...)		::Gltchium::Log::GetClientLogger()->error(__VA_ARGS__)
+#define GC_FATAL(...)		::Gltchium::Log::GetClientLogger()->fatal(__VA_ARGS__)
