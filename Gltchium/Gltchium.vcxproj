@@ -78,7 +78,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>GC_PLATFORM_WINDOWS;GC_BUILD_DLL;_WINDLL;GC_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GC_PLATFORM_WINDOWS;GC_BUILD_DLL;GC_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -98,7 +98,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>GC_PLATFORM_WINDOWS;GC_BUILD_DLL;_WINDLL;GC_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GC_PLATFORM_WINDOWS;GC_BUILD_DLL;GC_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -122,7 +122,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>GC_PLATFORM_WINDOWS;GC_BUILD_DLL;_WINDLL;GC_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GC_PLATFORM_WINDOWS;GC_BUILD_DLL;GC_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -142,6 +142,17 @@
       <Command>IF EXIST ..\bin\Dist-windows-x86_64\Gltchium\Gltchium.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Gltchium\Gltchium.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Gltchium\Gltchium.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Gltchium.h" />
+    <ClInclude Include="src\Gltchium\Application.h" />
+    <ClInclude Include="src\Gltchium\Core.h" />
+    <ClInclude Include="src\Gltchium\EntryPoint.h" />
+    <ClInclude Include="src\Gltchium\Log.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Gltchium\Application.cpp" />
+    <ClCompile Include="src\Gltchium\Log.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

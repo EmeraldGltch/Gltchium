@@ -1,7 +1,8 @@
 workspace "Gltchium"
 	architecture "x64"
 
-	configurations {
+	configurations
+	{
 		"Debug",
 		"Release",
 		"Dist"
@@ -17,12 +18,14 @@ project "Gltchium"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files {
-		"%{prj.name}/src/**.h}",
-		"%{prj.name}/src/**.cpp}",
+	files
+	{
+		"%{prj.name}/src/**.h",
+		"%{prj.name}/src/**.cpp"
 	}
 
-	includedirs {
+	includedirs
+	{
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -31,13 +34,14 @@ project "Gltchium"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines {
+		defines
+		{
 			"GC_PLATFORM_WINDOWS",
-			"GC_BUILD_DLL",
-			"_WINDLL"
+			"GC_BUILD_DLL"
 		}
 
-		postbuildcommands {
+		postbuildcommands
+		{
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
@@ -56,23 +60,25 @@ project "Gltchium"
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
-
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files {
-		"%{prj.name}/src/**.h}",
-		"%{prj.name}/src/**.cpp}",
+	files
+	{
+		"%{prj.name}/src/**.h",
+		"%{prj.name}/src/**.cpp"
 	}
 
-	includedirs {
-		"%{prj.name}/vendor/spdlog/include",
+	includedirs
+	{
+		"Gltchium/vendor/spdlog/include",
 		"Gltchium/src"
 	}
 
-	links {
+	links
+	{
 		"Gltchium"
 	}
 
@@ -81,9 +87,9 @@ project "Sandbox"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines {
-			"GC_PLATFORM_WINDOWS",
-			"_WINDLL"
+		defines
+		{
+			"GC_PLATFORM_WINDOWS"
 		}
 
 	filter "configurations:Debug"
