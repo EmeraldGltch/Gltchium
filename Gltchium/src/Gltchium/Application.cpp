@@ -1,8 +1,8 @@
+#include "gcpch.h"
 #include "Application.h"
 
 #include "Gltchium/EventSystem/ApplicationEvent.h"
 #include "Gltchium/Log.h"
-#include "Gltchium.h"
 
 namespace Gltchium {
 	Application::Application() {

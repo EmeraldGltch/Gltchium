@@ -18,6 +18,9 @@ project "Gltchium"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "gcpch.h"
+	pchsource "Gltchium/src/gcpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

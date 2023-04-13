@@ -1,5 +1,6 @@
 #pragma once
 
+#include "gcpch.h"
 #include "Gltchium/Core.h"
 
 namespace Gltchium {
@@ -14,9 +15,9 @@ namespace Gltchium {
 	enum EventCategory {
 		None = 0,
 		EventCategoryApplication = BIT(0),
-		EventCategoryInput       = BIT(1),
-		EventCategoryKeyboard    = BIT(2),
-		EventCategoryMouse       = BIT(3),
+		EventCategoryInput = BIT(1),
+		EventCategoryKeyboard = BIT(2),
+		EventCategoryMouse = BIT(3),
 		EventCategoryMouseButton = BIT(4)
 	};
 
