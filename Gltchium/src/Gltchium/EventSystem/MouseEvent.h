@@ -13,7 +13,7 @@ namespace Gltchium {
 			std::string ToString() const override {
 				std::stringstream ss;
 				ss << "MouseMovedEvent: " << m_MouseX << ", " << m_MouseY;
-				ss.str();
+				return ss.str();
 			}
 
 			EVENT_CLASS_TYPE(MouseMoved)
@@ -60,7 +60,7 @@ namespace Gltchium {
 			std::string ToString() const override {
 				std::stringstream ss;
 				ss << "MouseButtonPressedEvent: " << m_Button;
-				ss.str();
+				return ss.str();
 			}
 
 			EVENT_CLASS_TYPE(MouseButtonPressed)
@@ -73,7 +73,7 @@ namespace Gltchium {
 			std::string ToString() const override {
 				std::stringstream ss;
 				ss << "MouseButtonReleasedEvent: " << m_Button;
-				ss.str();
+				return ss.str();
 			}
 
 			EVENT_CLASS_TYPE(MouseButtonReleased)
