@@ -18,7 +18,10 @@ namespace Gltchium {
 	}
 
 	void Application::OnEvent(Event& e) {
-		GC_CORE_INFO("{0}", e);
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+
+		GC_CORE_TRACE("{0}", e);
 	}
 
 	void Application::Run() {
@@ -27,6 +30,11 @@ namespace Gltchium {
 			glClear(GL_COLOR_BUFFER_BIT);
 			m_Window->OnUpdate();
 		}
+	}
+
+	bool Application::OnWindowClose(WindowCloseEvent& e) {
+		m_Running = false;
+		return true;
 	}
 
 	void Print() {
