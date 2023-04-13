@@ -4,6 +4,9 @@
     <Filter Include="Gltchium">
       <UniqueIdentifier>{42AE5791-2E7B-B29C-5794-A04443C0E72A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gltchium\EventSystem">
+      <UniqueIdentifier>{F866874B-E4F5-1015-8D14-2510798221BB}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Gltchium.h" />
@@ -16,9 +19,22 @@
     <ClInclude Include="src\Gltchium\EntryPoint.h">
       <Filter>Gltchium</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gltchium\EventSystem\ApplicationEvent.h">
+      <Filter>Gltchium\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\EventSystem\Event.h">
+      <Filter>Gltchium\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\EventSystem\KeyEvent.h">
+      <Filter>Gltchium\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\EventSystem\MouseEvent.h">
+      <Filter>Gltchium\EventSystem</Filter>
+    </ClInclude>
     <ClInclude Include="src\Gltchium\Log.h">
       <Filter>Gltchium</Filter>
     </ClInclude>
+    <ClInclude Include="src\gcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gltchium\Application.cpp">
@@ -27,5 +43,6 @@
     <ClCompile Include="src\Gltchium\Log.cpp">
       <Filter>Gltchium</Filter>
     </ClCompile>
+    <ClCompile Include="src\gcpch.cpp" />
   </ItemGroup>
 </Project>

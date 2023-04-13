@@ -1,5 +1,8 @@
-#include "Application.h";
-#include <stdio.h>;
+#include "Application.h"
+
+#include "Gltchium/EventSystem/ApplicationEvent.h"
+#include "Gltchium/Log.h"
+#include "Gltchium.h"
 
 namespace Gltchium {
 	Application::Application() {
@@ -11,9 +14,17 @@ namespace Gltchium {
 	}
 
 	void Application::Run() {
-		while(true) {
+		WindowResizeEvent e(1280, 720);
 
+		if (e.IsInCategory(EventCategoryApplication)) {
+			GC_TRACE(e);
 		}
+
+		if (e.IsInCategory(EventCategoryInput)) {
+			GC_TRACE(e);
+		}
+
+		while (true);
 	}
 
 	void Print() {

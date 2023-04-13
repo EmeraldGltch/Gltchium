@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Core.h";
+#include "Core.h"
+#include "EventSystem/Event.h"
 
 namespace Gltchium {
 	class GLTCHIUM_API Application {
