@@ -15,6 +15,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Gltchium/Log.h"
+
 #ifdef GC_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

@@ -3,10 +3,11 @@
 
 #include "Gltchium/EventSystem/ApplicationEvent.h"
 #include "Gltchium/Log.h"
+#include <GLFW/glfw3.h>
 
 namespace Gltchium {
 	Application::Application() {
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application() {
@@ -14,17 +15,11 @@ namespace Gltchium {
 	}
 
 	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-
-		if (e.IsInCategory(EventCategoryApplication)) {
-			GC_TRACE(e);
+		while (m_Running) {
+			glClearColor(0, 0.05, 0, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-
-		if (e.IsInCategory(EventCategoryInput)) {
-			GC_TRACE(e);
-		}
-
-		while (true);
 	}
 
 	void Print() {

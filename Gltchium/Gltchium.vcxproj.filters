@@ -7,6 +7,12 @@
     <Filter Include="Gltchium\EventSystem">
       <UniqueIdentifier>{F866874B-E4F5-1015-8D14-2510798221BB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gltchium\Platforms">
+      <UniqueIdentifier>{09B0A5E0-F593-6636-5EF4-60894AF750B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gltchium\Platforms\Windows">
+      <UniqueIdentifier>{4353C3E1-2F63-6FB2-981C-D4D0844B5E4B}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Gltchium.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Gltchium\Log.h">
       <Filter>Gltchium</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gltchium\Platforms\Windows\WindowsWindow.h">
+      <Filter>Gltchium\Platforms\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\Window.h">
+      <Filter>Gltchium</Filter>
+    </ClInclude>
     <ClInclude Include="src\gcpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Gltchium\Log.cpp">
       <Filter>Gltchium</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gltchium\Platforms\Windows\WindowsWindow.cpp">
+      <Filter>Gltchium\Platforms\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\gcpch.cpp" />
   </ItemGroup>

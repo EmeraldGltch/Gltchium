@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "EventSystem/Event.h"
+#include "Window.h"
 
 namespace Gltchium {
 	class GLTCHIUM_API Application {
@@ -10,6 +11,9 @@ namespace Gltchium {
 			virtual ~Application();
 
 			void Run();
+		private:
+			std::unique_ptr<Window> m_Window;
+			bool m_Running = true;
 	};
 
 	__declspec(dllexport) void Print();
