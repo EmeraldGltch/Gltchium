@@ -1,0 +1,8 @@
+﻿  Sandbox.cpp
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Log.h(15,43): warning C4251: 'Gltchium::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
+C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Log.h(16,43): warning C4251: 'Gltchium::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
+C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(21,28): warning C4251: 'Gltchium::Application::m_Window': class 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>' needs to have dll-interface to be used by clients of class 'Gltchium::Application'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(21): message : see declaration of 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>'
+  Sandbox.vcxproj -> C:\Users\emera\source\repos\Gltchium\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe
