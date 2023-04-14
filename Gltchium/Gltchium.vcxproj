@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -109,6 +110,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -135,6 +137,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -157,14 +160,18 @@
     <ClInclude Include="src\Gltchium\EventSystem\Event.h" />
     <ClInclude Include="src\Gltchium\EventSystem\KeyEvent.h" />
     <ClInclude Include="src\Gltchium\EventSystem\MouseEvent.h" />
-    <ClInclude Include="src\Gltchium\Log.h" />
+    <ClInclude Include="src\Gltchium\LayerStack\Layer.h" />
+    <ClInclude Include="src\Gltchium\LayerStack\LayerStack.h" />
+    <ClInclude Include="src\Gltchium\Logging\Log.h" />
+    <ClInclude Include="src\Gltchium\Platforms\Window.h" />
     <ClInclude Include="src\Gltchium\Platforms\Windows\WindowsWindow.h" />
-    <ClInclude Include="src\Gltchium\Window.h" />
     <ClInclude Include="src\gcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gltchium\Application.cpp" />
-    <ClCompile Include="src\Gltchium\Log.cpp" />
+    <ClCompile Include="src\Gltchium\LayerStack\Layer.cpp" />
+    <ClCompile Include="src\Gltchium\LayerStack\LayerStack.cpp" />
+    <ClCompile Include="src\Gltchium\Logging\Log.cpp" />
     <ClCompile Include="src\Gltchium\Platforms\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\gcpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

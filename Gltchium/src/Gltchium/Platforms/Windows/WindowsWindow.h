@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Gltchium/Window.h"
+#include "Gltchium/Platforms/Window.h"
 
 #include <GLFW/glfw3.h>
 

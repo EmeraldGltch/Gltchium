@@ -7,6 +7,12 @@
     <Filter Include="Gltchium\EventSystem">
       <UniqueIdentifier>{F866874B-E4F5-1015-8D14-2510798221BB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gltchium\LayerStack">
+      <UniqueIdentifier>{E4145FA1-5076-3CAF-D9E3-82614544736E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gltchium\Logging">
+      <UniqueIdentifier>{D8B009DA-C4A9-282C-EDDB-0DB1D9330838}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Gltchium\Platforms">
       <UniqueIdentifier>{09B0A5E0-F593-6636-5EF4-60894AF750B8}</UniqueIdentifier>
     </Filter>
@@ -37,14 +43,20 @@
     <ClInclude Include="src\Gltchium\EventSystem\MouseEvent.h">
       <Filter>Gltchium\EventSystem</Filter>
     </ClInclude>
-    <ClInclude Include="src\Gltchium\Log.h">
-      <Filter>Gltchium</Filter>
+    <ClInclude Include="src\Gltchium\LayerStack\Layer.h">
+      <Filter>Gltchium\LayerStack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\LayerStack\LayerStack.h">
+      <Filter>Gltchium\LayerStack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\Logging\Log.h">
+      <Filter>Gltchium\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\Platforms\Window.h">
+      <Filter>Gltchium\Platforms</Filter>
     </ClInclude>
     <ClInclude Include="src\Gltchium\Platforms\Windows\WindowsWindow.h">
       <Filter>Gltchium\Platforms\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Gltchium\Window.h">
-      <Filter>Gltchium</Filter>
     </ClInclude>
     <ClInclude Include="src\gcpch.h" />
   </ItemGroup>
@@ -52,8 +64,14 @@
     <ClCompile Include="src\Gltchium\Application.cpp">
       <Filter>Gltchium</Filter>
     </ClCompile>
-    <ClCompile Include="src\Gltchium\Log.cpp">
-      <Filter>Gltchium</Filter>
+    <ClCompile Include="src\Gltchium\LayerStack\Layer.cpp">
+      <Filter>Gltchium\LayerStack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gltchium\LayerStack\LayerStack.cpp">
+      <Filter>Gltchium\LayerStack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gltchium\Logging\Log.cpp">
+      <Filter>Gltchium\Logging</Filter>
     </ClCompile>
     <ClCompile Include="src\Gltchium\Platforms\Windows\WindowsWindow.cpp">
       <Filter>Gltchium\Platforms\Windows</Filter>

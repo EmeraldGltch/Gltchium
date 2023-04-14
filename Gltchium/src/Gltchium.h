@@ -2,7 +2,8 @@
 
 // USED IN GLTCHIUM PRODUCTS
 #include "Gltchium/Application.h"
-#include "Gltchium/Log.h"
+#include "Gltchium/LayerStack/Layer.h"
+#include "Gltchium/Logging/Log.h"
 
 /////////////////////
 ///  Entry Point  ///
