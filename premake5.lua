@@ -1,8 +1,7 @@
 workspace "Gltchium"
 	architecture "x64"
 
-	configurations
-	{
+	configurations {
 		"Debug",
 		"Release",
 		"Dist"
@@ -12,8 +11,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Gltchium/vendor/GLFW/include"
+IncludeDir["Glad"] = "Gltchium/vendor/Glad/include"
 
 include "Gltchium/vendor/GLFW"
+include "Gltchium/vendor/Glad"
 
 project "Gltchium"
 	location "Gltchium"
@@ -26,21 +27,21 @@ project "Gltchium"
 	pchheader "gcpch.h"
 	pchsource "Gltchium/src/gcpch.cpp"
 
-	files
-	{
+	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
-	includedirs
-	{
+	includedirs {
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links {
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -49,14 +50,13 @@ project "Gltchium"
 		staticruntime "On"
 		systemversion "10.0.17134.0"
 
-		defines
-		{
+		defines {
 			"GC_PLATFORM_WINDOWS",
-			"GC_BUILD_DLL"
+			"GC_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
-		postbuildcommands
-		{
+		postbuildcommands {
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
@@ -83,20 +83,17 @@ project "Sandbox"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files
-	{
+	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
-	includedirs
-	{
+	includedirs {
 		"Gltchium/vendor/spdlog/include",
 		"Gltchium/src"
 	}
 
-	links
-	{
+	links {
 		"Gltchium"
 	}
 
@@ -105,8 +102,7 @@ project "Sandbox"
 		staticruntime "On"
 		systemversion "10.0.17134.0"
 
-		defines
-		{
+		defines {
 			"GC_PLATFORM_WINDOWS"
 		}
 

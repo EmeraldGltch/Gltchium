@@ -5,6 +5,8 @@
 #include "Gltchium/EventSystem/KeyEvent.h"
 #include "Gltchium/EventSystem/MouseEvent.h"
 
+#include <glad/glad.h>
+
 namespace Gltchium {
 	static bool s_GLFWInitialized = false;
 
@@ -42,6 +44,10 @@ namespace Gltchium {
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		GC_CORE_ASSERT(status, "Failed to Initialize GLAD");
+
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(false);
 
