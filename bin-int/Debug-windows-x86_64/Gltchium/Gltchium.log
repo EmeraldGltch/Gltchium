@@ -14,10 +14,17 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=Gltchium::Layer *
           ]
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(25,28): warning C4251: 'Gltchium::Application::m_Window': class 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>' needs to have dll-interface to be used by clients of class 'Gltchium::Application'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(25): message : see declaration of 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(46,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(67,10): warning C4129: '$': unrecognized character escape sequence
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29,28): warning C4251: 'Gltchium::Application::m_Window': class 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>' needs to have dll-interface to be used by clients of class 'Gltchium::Application'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29): message : see declaration of 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(52,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(73,10): warning C4129: '$': unrecognized character escape sequence
+  ImGuiOpenGLRenderer.cpp
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(53): warning C4603: '_CRT_SECURE_NO_WARNINGS': macro is not defined or definition is different after precompiled header use
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(53): message : Add macro to precompiled header instead of defining here
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(56): message : use of precompiled header
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(99,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(100,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(353,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   WindowsWindow.cpp
   Generating Code...
      Creating library ..\bin\Debug-windows-x86_64\Gltchium\Gltchium.lib and object ..\bin\Debug-windows-x86_64\Gltchium\Gltchium.exp

@@ -7,6 +7,9 @@
     <Filter Include="Gltchium\EventSystem">
       <UniqueIdentifier>{F866874B-E4F5-1015-8D14-2510798221BB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Gltchium\ImGui">
+      <UniqueIdentifier>{EC4C6E57-D81A-625D-C1AE-D283AD1B3EC2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Gltchium\LayerStack">
       <UniqueIdentifier>{E4145FA1-5076-3CAF-D9E3-82614544736E}</UniqueIdentifier>
     </Filter>
@@ -15,6 +18,9 @@
     </Filter>
     <Filter Include="Gltchium\Platforms">
       <UniqueIdentifier>{09B0A5E0-F593-6636-5EF4-60894AF750B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gltchium\Platforms\OpenGL">
+      <UniqueIdentifier>{1DD50C88-8997-4012-D247-CF9E3E4919F0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Gltchium\Platforms\Windows">
       <UniqueIdentifier>{4353C3E1-2F63-6FB2-981C-D4D0844B5E4B}</UniqueIdentifier>
@@ -43,6 +49,9 @@
     <ClInclude Include="src\Gltchium\EventSystem\MouseEvent.h">
       <Filter>Gltchium\EventSystem</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gltchium\ImGui\ImGuiLayer.h">
+      <Filter>Gltchium\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Gltchium\LayerStack\Layer.h">
       <Filter>Gltchium\LayerStack</Filter>
     </ClInclude>
@@ -51,6 +60,9 @@
     </ClInclude>
     <ClInclude Include="src\Gltchium\Logging\Log.h">
       <Filter>Gltchium\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Gltchium\Platforms\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Gltchium\Platforms\Window.h">
       <Filter>Gltchium\Platforms</Filter>
@@ -64,6 +76,9 @@
     <ClCompile Include="src\Gltchium\Application.cpp">
       <Filter>Gltchium</Filter>
     </ClCompile>
+    <ClCompile Include="src\Gltchium\ImGui\ImGuiLayer.cpp">
+      <Filter>Gltchium\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Gltchium\LayerStack\Layer.cpp">
       <Filter>Gltchium\LayerStack</Filter>
     </ClCompile>
@@ -72,6 +87,9 @@
     </ClCompile>
     <ClCompile Include="src\Gltchium\Logging\Log.cpp">
       <Filter>Gltchium\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Gltchium\Platforms\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Gltchium\Platforms\Windows\WindowsWindow.cpp">
       <Filter>Gltchium\Platforms\Windows</Filter>

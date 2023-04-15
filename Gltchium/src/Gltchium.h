@@ -5,6 +5,8 @@
 #include "Gltchium/LayerStack/Layer.h"
 #include "Gltchium/Logging/Log.h"
 
+#include "Gltchium/ImGui/ImGuiLayer.h"
+
 /////////////////////
 ///  Entry Point  ///
 /////////////////////

@@ -17,6 +17,7 @@ class Sandbox : public Gltchium::Application {
 	public:
 		Sandbox() {
 			PushLayer(new TestLayer());
+			PushOverlay(new Gltchium::ImGuiLayer());
 		}
 
 		~Sandbox() {
