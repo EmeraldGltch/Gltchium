@@ -14,9 +14,11 @@ IncludeDir["GLFW"] = "Gltchium/vendor/GLFW/include"
 IncludeDir["Glad"] = "Gltchium/vendor/Glad/include"
 IncludeDir["ImGui"] = "Gltchium/vendor/imgui"
 
-include "Gltchium/vendor/GLFW"
-include "Gltchium/vendor/Glad"
-include "Gltchium/vendor/imgui"
+group "Dependencies"
+	include "Gltchium/vendor/GLFW"
+	include "Gltchium/vendor/Glad"
+	include "Gltchium/vendor/imgui"
+group ""
 
 startproject "Sandbox"
 
