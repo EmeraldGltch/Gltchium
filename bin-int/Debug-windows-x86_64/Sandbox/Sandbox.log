@@ -1,1 +1,23 @@
-﻿  Sandbox.vcxproj -> C:\Users\emera\source\repos\Gltchium\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe
+﻿cl : command line warning D9025: overriding '/MTd' with '/MDd'
+  Sandbox.cpp
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(15,43): warning C4251: 'Gltchium::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
+C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(16,43): warning C4251: 'Gltchium::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
+C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\Layer.h(19,16): warning C4251: 'Gltchium::Layer::m_DebugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Gltchium::Layer'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4871): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(22,24): warning C4251: 'Gltchium::LayerStack::m_Layers': class 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(19): message : see declaration of 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(23,34): warning C4251: 'Gltchium::LayerStack::m_LayerInsert': class 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
+          with
+          [
+              _Ty=Gltchium::Layer *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(457): message : see declaration of 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>'
+          with
+          [
+              _Ty=Gltchium::Layer *
+          ]
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29,28): warning C4251: 'Gltchium::Application::m_Window': class 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>' needs to have dll-interface to be used by clients of class 'Gltchium::Application'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29): message : see declaration of 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>'
+  Sandbox.vcxproj -> C:\Users\emera\source\repos\Gltchium\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe

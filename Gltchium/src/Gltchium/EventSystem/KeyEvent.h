@@ -15,20 +15,20 @@ namespace Gltchium {
 	};
 
 	class GLTCHIUM_API KeyPressedEvent : public KeyEvent {
-	public:
-		KeyPressedEvent(int keycode, int repeatCount) : KeyEvent(keycode), m_RepeatCount(repeatCount) {}
+		public:
+			KeyPressedEvent(int keycode, int repeatCount) : KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
-		inline int GetRepeatCount() const { return m_RepeatCount; }
+			inline int GetRepeatCount() const { return m_RepeatCount; }
 
-		std::string ToString() const override {
-			std::stringstream ss;
-			ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << "x)";
-			return ss.str();
-		}
+			std::string ToString() const override {
+				std::stringstream ss;
+				ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << "x)";
+				return ss.str();
+			}
 
-		EVENT_CLASS_TYPE(KeyPressed)
-	private:
-		int m_RepeatCount;
+			EVENT_CLASS_TYPE(KeyPressed)
+		private:
+			int m_RepeatCount;
 	};
 
 	class GLTCHIUM_API KeyReleasedEvent : public KeyEvent {
@@ -42,5 +42,18 @@ namespace Gltchium {
 			}
 
 			EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+	class GLTCHIUM_API KeyTypedEvent : public KeyEvent {
+		public:
+			KeyTypedEvent(int keycode) : KeyEvent(keycode) {}
+
+			std::string ToString() const override {
+				std::stringstream ss;
+				ss << "KeyTypedEvent: " << m_KeyCode;
+				return ss.str();
+			}
+
+			EVENT_CLASS_TYPE(KeyTyped)
 	};
 }

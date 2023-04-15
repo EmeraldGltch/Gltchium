@@ -23,9 +23,9 @@ namespace Gltchium {
 			float m_MouseX, m_MouseY;
 	};
 
-	class GLTCHIUM_API MouseScolledEvent : public Event {
+	class GLTCHIUM_API MouseScrolledEvent : public Event {
 		public:
-			MouseScolledEvent(float xOffset, float yOffset) : m_XOffset(xOffset), m_YOffset(yOffset) {}
+			MouseScrolledEvent(float xOffset, float yOffset) : m_XOffset(xOffset), m_YOffset(yOffset) {}
 
 			inline float GetXOffset() const { return m_XOffset; }
 			inline float GetYOffset() const { return m_YOffset; }
