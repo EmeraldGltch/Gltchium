@@ -18,6 +18,8 @@ include "Gltchium/vendor/GLFW"
 include "Gltchium/vendor/Glad"
 include "Gltchium/vendor/imgui"
 
+startproject "Sandbox"
+
 project "Gltchium"
 	location "Gltchium"
 	kind "SharedLib"
