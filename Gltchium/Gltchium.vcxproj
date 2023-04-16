@@ -163,16 +163,19 @@
     <ClInclude Include="src\Gltchium\Logging\Log.h" />
     <ClInclude Include="src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Gltchium\Platforms\Window.h" />
+    <ClInclude Include="src\Gltchium\Platforms\Windows\Input\WindowsInput.h" />
     <ClInclude Include="src\Gltchium\Platforms\Windows\WindowsWindow.h" />
     <ClInclude Include="src\gcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gltchium\Application.cpp" />
     <ClCompile Include="src\Gltchium\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Gltchium\Input\Input.h" />
     <ClCompile Include="src\Gltchium\LayerStack\Layer.cpp" />
     <ClCompile Include="src\Gltchium\LayerStack\LayerStack.cpp" />
     <ClCompile Include="src\Gltchium\Logging\Log.cpp" />
     <ClCompile Include="src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Gltchium\Platforms\Windows\Input\WindowsInput.cpp" />
     <ClCompile Include="src\Gltchium\Platforms\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\gcpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

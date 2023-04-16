@@ -1,9 +1,4 @@
-﻿  gcpch.cpp
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(15,43): warning C4251: 'Gltchium::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
-C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(16,43): warning C4251: 'Gltchium::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
-C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-  Application.cpp
+﻿  Application.cpp
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\Layer.h(19,16): warning C4251: 'Gltchium::Layer::m_DebugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Gltchium::Layer'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4871): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(22,24): warning C4251: 'Gltchium::LayerStack::m_Layers': class 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
@@ -20,57 +15,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           ]
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29,28): warning C4251: 'Gltchium::Application::m_Window': class 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>' needs to have dll-interface to be used by clients of class 'Gltchium::Application'
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29): message : see declaration of 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(52,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(73,10): warning C4129: '$': unrecognized character escape sequence
-  ImGuiLayer.cpp
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\Layer.h(19,16): warning C4251: 'Gltchium::Layer::m_DebugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Gltchium::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4871): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(22,24): warning C4251: 'Gltchium::LayerStack::m_Layers': class 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(19): message : see declaration of 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(23,34): warning C4251: 'Gltchium::LayerStack::m_LayerInsert': class 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
-          with
-          [
-              _Ty=Gltchium::Layer *
-          ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(457): message : see declaration of 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>'
-          with
-          [
-              _Ty=Gltchium::Layer *
-          ]
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29,28): warning C4251: 'Gltchium::Application::m_Window': class 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>' needs to have dll-interface to be used by clients of class 'Gltchium::Application'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.h(29): message : see declaration of 'std::unique_ptr<Gltchium::Window,std::default_delete<Gltchium::Window>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\ImGui\ImGuiLayer.cpp(61,80): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\ImGui\ImGuiLayer.cpp(61,51): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\ImGui\ImGuiLayer.cpp(150,52): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\ImGui\ImGuiLayer.cpp(150,37): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-  Layer.cpp
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\Layer.h(19,16): warning C4251: 'Gltchium::Layer::m_DebugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Gltchium::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4871): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  LayerStack.cpp
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\Layer.h(19,16): warning C4251: 'Gltchium::Layer::m_DebugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Gltchium::Layer'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4871): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(22,24): warning C4251: 'Gltchium::LayerStack::m_Layers': class 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(19): message : see declaration of 'std::vector<Gltchium::Layer *,std::allocator<Gltchium::Layer *>>'
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\LayerStack.h(23,34): warning C4251: 'Gltchium::LayerStack::m_LayerInsert': class 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>' needs to have dll-interface to be used by clients of class 'Gltchium::LayerStack'
-          with
-          [
-              _Ty=Gltchium::Layer *
-          ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(457): message : see declaration of 'std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>'
-          with
-          [
-              _Ty=Gltchium::Layer *
-          ]
-  Log.cpp
-  ImGuiOpenGLRenderer.cpp
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(53): warning C4603: '_CRT_SECURE_NO_WARNINGS': macro is not defined or definition is different after precompiled header use
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(53): message : Add macro to precompiled header instead of defining here
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(56): message : use of precompiled header
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(99,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(100,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(353,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  WindowsWindow.cpp
-  Generating Code...
-     Creating library ..\bin\Debug-windows-x86_64\Gltchium\Gltchium.lib and object ..\bin\Debug-windows-x86_64\Gltchium\Gltchium.exp
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(53,30): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Application.cpp(77,10): warning C4129: '$': unrecognized character escape sequence
   Gltchium.vcxproj -> C:\Users\emera\source\repos\Gltchium\bin\Debug-windows-x86_64\Gltchium\Gltchium.dll
