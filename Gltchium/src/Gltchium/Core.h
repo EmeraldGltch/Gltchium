@@ -10,6 +10,10 @@
 	#error Gltchium only supports Windows!
 #endif
 
+#ifdef GC_DEBUG
+	#define GC_ENABLE_ASSERTS
+#endif
+
 #ifdef GC_ENABLE_ASSERTS
 	#define GC_ASSERT(x, ...) { if(!(x)) { GC_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 	#define GC_CORE_ASSERT(x, ...) { if(!(x)) { GC_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }

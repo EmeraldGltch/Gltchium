@@ -1,5 +1,4 @@
-﻿cl : command line warning D9025: overriding '/MTd' with '/MDd'
-  Sandbox.cpp
+﻿  Sandbox.cpp
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(15,43): warning C4251: 'Gltchium::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
 C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(16,43): warning C4251: 'Gltchium::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'

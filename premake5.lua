@@ -1,5 +1,6 @@
 workspace "Gltchium"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations {
 		"Debug",
@@ -20,12 +21,11 @@ group "Dependencies"
 	include "Gltchium/vendor/imgui"
 group ""
 
-startproject "Sandbox"
-
 project "Gltchium"
 	location "Gltchium"
 	kind "SharedLib"
 	language "C++"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -55,7 +55,6 @@ project "Gltchium"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "10.0.17134.0"
 
 		defines {
@@ -65,28 +64,29 @@ project "Gltchium"
 		}
 
 		postbuildcommands {
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+			("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
 		}
 
 	filter "configurations:Debug"
 		defines "GC_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "GC_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "GC_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -107,7 +107,6 @@ project "Sandbox"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "10.0.17134.0"
 
 		defines {
@@ -116,15 +115,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "GC_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "GC_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "GC_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"

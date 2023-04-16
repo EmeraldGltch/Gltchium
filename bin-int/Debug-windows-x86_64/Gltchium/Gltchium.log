@@ -1,4 +1,8 @@
-﻿cl : command line warning D9025: overriding '/MTd' with '/MDd'
+﻿  gcpch.cpp
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(15,43): warning C4251: 'Gltchium::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
+C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Logging\Log.h(16,43): warning C4251: 'Gltchium::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Gltchium::Log'
+C:\Users\emera\source\repos\Gltchium\Gltchium\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
   Application.cpp
 C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\LayerStack\Layer.h(19,16): warning C4251: 'Gltchium::Layer::m_DebugName': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Gltchium::Layer'
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4871): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
@@ -57,6 +61,14 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=Gltchium::Layer *
           ]
+  Log.cpp
+  ImGuiOpenGLRenderer.cpp
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(53): warning C4603: '_CRT_SECURE_NO_WARNINGS': macro is not defined or definition is different after precompiled header use
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(53): message : Add macro to precompiled header instead of defining here
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(56): message : use of precompiled header
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(99,5): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(100,5): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\emera\source\repos\Gltchium\Gltchium\src\Gltchium\Platforms\OpenGL\ImGuiOpenGLRenderer.cpp(353,5): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   WindowsWindow.cpp
   Generating Code...
      Creating library ..\bin\Debug-windows-x86_64\Gltchium\Gltchium.lib and object ..\bin\Debug-windows-x86_64\Gltchium\Gltchium.exp
